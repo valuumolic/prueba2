@@ -9,15 +9,30 @@
 <body>
     <div class="container">
         <!-- Navigation -->
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#institucion">Nuestra Institución</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#donaciones">Donaciones</a></li>
-                <li><a href="#atencion">Atención al Ciudadano</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Liga Contra el Cáncer</div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#institucion">Nuestra Institución</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#donaciones">Donaciones</a></li>
+                    <li><a href="#atencion">Atención al Ciudadano</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <button class="donate-btn">Donar</button>
+                <div class="language-select">
+                    <select>
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
 
         <!-- Hero Section -->
@@ -36,9 +51,10 @@
             <section id="donation-form">
                 <h3>Selecciona el monto de tu donación</h3>
                 <div class="donation-amounts">
-                    {['20.000', '50.000', '100.000', '200.000'].map(amount => (
-                        `<button class="amount-button">${amount}</button>`
-                    ))}
+                    <button class="amount-button">20.000</button>
+                    <button class="amount-button">50.000</button>
+                    <button class="amount-button">100.000</button>
+                    <button class="amount-button">200.000</button>
                 </div>
 
                 <h3>Frecuencia de donación</h3>

@@ -18,6 +18,7 @@ body {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 15px 0;
+    position: relative;
 }
 
 .navbar .container {
@@ -56,6 +57,19 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
 }
 
 /* Estilos del contenido principal */
@@ -168,5 +182,25 @@ h1 {
     
     .nav-links {
         display: none; /* Simplificado para dispositivos móviles */
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        text-align: center;
     }
 }
