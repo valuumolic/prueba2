@@ -1,103 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liga Contra el Cáncer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Laboratorio 14</title>
+    <link rel="stylesheet" href="style14.css">
+
 </head>
 <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">Liga Contra el Cáncer</div>
-                <ul class="nav-links">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#institucion">Nuestra Institución</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#donaciones">Donaciones</a></li>
-                    <li><a href="#atencion">Atención al Ciudadano</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-                <button class="donate-btn">Donar</button>
-                <div class="language-select">
-                    <select>
-                        <option value="es">ES</option>
-                        <option value="en">EN</option>
-                    </select>
-                </div>
-                <div class="menu-toggle" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+    <header>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">A cerca de</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+
+            <button id="nav-toggle" aria-label="Toggle navigation"><img src="menu.png" width="60" height="70" ></button>
         </nav>
+    </header>
 
-        <!-- Hero Section -->
-        <section id="donaciones" class="hero">
-            <h1>Donaciones</h1>
-            <p>#MiDonacionPorUnaSonrisa :</p>
+    <main>
+        <section id="home">
+            <h1>Bienvenidos  a nuestro sitio</h1>
+            <p>Este es el contenido 1 de mi pagina web INICIO</p>
         </section>
-
-        <!-- Main Content -->
-        <main>
-            <section>
-                <h2>Tu donación hace posible que muchas personas que están pasando por una situación difícil, puedan encontrar en nosotros un apoyo emocional y de servicios, lo que hace que su enfermedad sea más llevadera.</h2>
-            </section>
-
-            <!-- Donation Form -->
-            <section id="donation-form">
-                <h3>Selecciona el monto de tu donación</h3>
-                <div class="donation-amounts">
-                    <button class="amount-button">20.000</button>
-                    <button class="amount-button">50.000</button>
-                    <button class="amount-button">100.000</button>
-                    <button class="amount-button">200.000</button>
-                </div>
-
-                <h3>Frecuencia de donación</h3>
-                <select>
-                    <option>Única</option>
-                    <option>Mensual</option>
-                </select>
-
-                <button class="donate-button">Donar ahora</button>
-            </section>
-
-            <!-- Services Section -->
-            <section id="servicios">
-                <h2>Nuetros Servicios</h2>
-                <p>Cuidado integral y especializado en la lucha contra el cáncer</p>
-                <ul>
-                    <li>Consultas Médicas: Ofrecemos consultas con especialistas en oncología.</li>
-                    <li>Exámenes Diagnósticos: Realizamos una amplia gama de exámenes.</li>
-                    <li>Tratamientos Especializados: Proporcionamos tratamientos avanzados.</li>
-                    <li>Apoyo Psicológico: Brindamos apoyo emocional y psicológico.</li>
-                </ul>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contacto">
-                <h2>Contáctanos</h2>
-                <p>Estamos aquí para ayudarte</p>
-                <h3>Información de Contacto</h3>
-                <p>Email: info@ligacontraelcancer.com</p>
-                <p>Teléfono: +57 1234567890</p>
-                <p>Dirección: Calle Principal #123, Ciudad, País</p>
-
-                <h3>Envíanos un Mensaje</h3>
-                <form id="contact-form">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Correo Electrónico" required>
-                    <textarea placeholder="Mensaje" required></textarea>
-                    <button type="submit">Enviar Mensaje</button>
-                </form>
-            </section>
-        </main>
-    </div>
-
-    <script src="script.js"></script>
+        <section id="about">
+            <h1>Bienvenidos  a nuestro sitio</h1>
+            <p>Este es el contenido 2 de mi pagina web A CERCA DE</p>
+        </section>
+        <section id="services">
+            <h1>Bienvenidos  a nuestro sitio</h1>
+            <p>Este es el contenido 3 de mi pagina web SRVICIOS</p>
+        </section>
+        <section id="contact"></section>
+            <h1>Bienvenidos  a nuestro sitio</h1>
+            <p>Este es el contenido 4 de mi pagina web CONTACTO</p>
+        </section>
+    </main>
+    <script src="script14.js"></script>
 </body>
 </html>
