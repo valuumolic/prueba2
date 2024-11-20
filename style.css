@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +9,7 @@ header {
     background-color: #333;
     color: white;
     padding: 1em 0;
-   position: fixed;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -16,7 +17,7 @@ header {
 
 nav {
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -24,7 +25,7 @@ nav {
 }
 
 nav ul {
-   list-style: none;
+    list-style: none;
     display: flex;
     gap: 1em;
     margin: 0;
@@ -62,8 +63,16 @@ main {
 section {
     padding: 2em 0;
 }
-/* Responsive Design */
-@media (max-width: 768px) {   nav ul {
+
+/* Estilos para las secciones */
+#home, #about, #services, #contact {
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -82,20 +91,4 @@ section {
     .nav-open ul {
         display: flex;
     }
-}
-#home{
-height: 100vh;
-background-color: #f4f4f4;
-}
-#about{
-height: 100vh;
-background-color: #f4f4f4;
-}
-#services{
-height: 100vh;
-background-color: #f4f4f4;
-}
-#contact{
-height: 100vh;
-background-color: #f4f4f4;
 }
