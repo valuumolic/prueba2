@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga Contra el Cáncer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#institucion">Nuestra Institución</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#donaciones">Donaciones</a></li>
+                <li><a href="#atencion">Atención al Ciudadano</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
 
+        <!-- Hero Section -->
+        <section id="donaciones" class="hero">
+            <h1>Donaciones</h1>
+            <p>#MiDonacionPorUnaSonrisa :</p>
+        </section>
+
+        <!-- Main Content -->
+        <main>
+            <section>
+                <h2>Tu donación hace posible que muchas personas que están pasando por una situación difícil, puedan encontrar en nosotros un apoyo emocional y de servicios, lo que hace que su enfermedad sea más llevadera.</h2>
+            </section>
+
+            <!-- Donation Form -->
+            <section id="donation-form">
+                <h3>Selecciona el monto de tu donación</h3>
+                <div class="donation-amounts">
+                    {['20.000', '50.000', '100.000', '200.000'].map(amount => (
+                        `<button class="amount-button">${amount}</button>`
+                    ))}
+                </div>
+
+                <h3>Frecuencia de donación</h3>
+                <select>
+                    <option>Única</option>
+                    <option>Mensual</option>
+                </select>
+
+                <button class="donate-button">Donar ahora</button>
+            </section>
+
+            <!-- Services Section -->
+            <section id="servicios">
+                <h2>Nuetros Servicios</h2>
+                <p>Cuidado integral y especializado en la lucha contra el cáncer</p>
+                <ul>
+                    <li>Consultas Médicas: Ofrecemos consultas con especialistas en oncología.</li>
+                    <li>Exámenes Diagnósticos: Realizamos una amplia gama de exámenes.</li>
+                    <li>Tratamientos Especializados: Proporcionamos tratamientos avanzados.</li>
+                    <li>Apoyo Psicológico: Brindamos apoyo emocional y psicológico.</li>
+                </ul>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contacto">
+                <h2>Contáctanos</h2>
+                <p>Estamos aquí para ayudarte</p>
+                <h3>Información de Contacto</h3>
+                <p>Email: info@ligacontraelcancer.com</p>
+                <p>Teléfono: +57 1234567890</p>
+                <p>Dirección: Calle Principal #123, Ciudad, País</p>
+
+                <h3>Envíanos un Mensaje</h3>
+                <form id="contact-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                    <textarea placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
